@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="spreadcell.css">
+</head>
+
+<body>
+    <div class="page-action-cont">
+        <div class="page-action">Home</div>
+        <div class="page-action">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cell-prop-cont">
+        <span class="cell-prop copy"><i class="far fa-copy"></i></span>
+        <span class="cell-prop cut"><i class="fas fa-cut"></i></span>
+        <span class="cell-prop paste"><i class="far fa-clipboard"></i></span>
+        <span class="cell-prop">
+            <select class="font-types cell-prop">
+                <!-- <option value="calc()">calc()</option> -->
+                <option value="fantasy">Fantasy</option>
+                <option value="monospace">Monospace</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="cursive">Cursive</option>
+            </select>
+        </span>
+        <span class="cell-prop">
+            <select name="" id="" class="font-size-group cell-prop">
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+            </select>
+        </span>
+        <span class="cell-prop"><i class="fas fa-bold"></i></span>
+        <span class="cell-prop"><i class="fas fa-italic"></i></span>
+        <span class="cell-prop"><i class="fas fa-underline"></i></span>
+        <span class="cell-prop"><i class="fas fa-align-left"></i></span>
+        <span class="cell-prop"><i class="fas fa-align-center"></i></span>
+        <span class="cell-prop"><i class="fas fa-align-right"></i></span>
+        <span class="cell-prop">
+            <span class="font-color">
+                <input type = "color" class="cell-prop">
+                <i class="fas fa-palette"></i>
+            </span>
+        </span>
+        <span class="cell-prop">
+            <span class="BGcolor">
+                <input type="color" class="cell-prop">
+                <i class="fas fa-fill-drip"></i>
+            </span>
+        </span>
+        <span > </span>
+     
+        <span class="cell-prop">
+            <i class="fas fa-download"></i>
+        </span>
+        <span class="cell-prop">
+            <span class="upload">
+                <input type="file" class="" name="inputfile" id="inputfile">
+                <i class="fas fa-upload "></i>
+            </span>
+        </span>
+    </div>
+    <div class="formulabar">
+        <input type="text" readonly class="cell-position">
+        <div class="formula-sign"><img src="https://img.icons8.com/ios/50/000000/formula-fx.png" /></div>
+        <input type="text" class="formula-input">
+    </div>
+    <div class="horizontal-count"></div>
+    <div class="grids-container">
+        <div class="null"></div>
+            <div class="grid-col"></div>
+            <div class="grid-cells-and-row">
+                <div class="grid-row"></div>
+                <div class="grid-cells"></div>
+            </div>
+    </div>
+    <div class="sheet-handeler">
+        <div class="add-sheet"><i class="fas fa-folder-plus"></i></div>
+        <div class="store-sheet">
+            <!-- <div class="onesheet">Sheet 1</div>
+            <div class="onesheet">Sheet 2</div> -->
+        </div>
+    </div>
+</body>
+<script src="spreadcell.js"></script>
+<script src = "sheethandler.js"></script>
+<script src = "mycellproperties.js"></script>
+<!-- <script src = "sheethandler.js"></script> -->
+
+<script src = "mycellcycledetect.js"></script>
+<script src = "showcycle.js"></script>
+<script src = "mycellformulae.js"></script>
+<script src = "cutcopypaste.js"></script>
+<script src = "downloadupload.js"></script>
+
+</html>
